@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -31,12 +32,16 @@
               <li class="card__tag-list-item">#mastereraqus</li>
               <li class="card__tag-list-item">#english voices</li>
             </ul>
-            <div class="card__button-bookmark">
+            <div
+              class="card__button-bookmark"
+              data-js="card__button-bookmark-badge"
+            >
               <button class="bookmark" aria-label="bookmark" type="button">
                 <svg
                   class="bookmark__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewbox="0 0 24 24"
+                  data-js="card__button-bookmark-icon"
                 >
                   <path
                     d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"
@@ -65,11 +70,7 @@
               <li class="card__tag-list-item">#abracadabra</li>
             </ul>
             <div class="card__button-bookmark">
-              <button
-                class="bookmark bookmark--active"
-                aria-label="bookmark"
-                type="button"
-              >
+              <button class="bookmark" aria-label="bookmark" type="button">
                 <svg
                   class="bookmark__icon"
                   xmlns="http://www.w3.org/2000/svg"
