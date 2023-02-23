@@ -1,1 +1,10 @@
-// phew… not a lot going on here. Please add some code!
+const bookmarkIcon = document.querySelector(
+  '[data-js="card__button-bookmark-icon"]'
+);
+const bookmarkBadge = document.querySelector(
+  '[data-js="card__button-bookmark-badge"]'
+);
+
+bookmarkBadge.addEventListener("click", () => {
+  bookmarkIcon.classList.toggle("bookmark--active");
+});
